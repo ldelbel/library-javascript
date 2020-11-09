@@ -23,7 +23,6 @@ form.addEventListener('submit', (e)=> {
   addBookToLibrary(title, author, pageNumber);
   e.preventDefault();
   console.log(myLibrary);
-
 });
 
 function displayBook(book){
