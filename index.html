@@ -10,11 +10,11 @@
 </head>
 <body>
   <main class="container">
-    <button id="book-modal" class="btn">New Book</button>
+    <button id="book-modal" class="btn" onclick="displayModal()">New Book</button>
     <div id="form-modal" class="modal-container">
       
       <form id="form">
-        <span class="close">&times;</span>
+        <span class="close" onclick="closeModal()">&times;</span>
         <div class="form-field">
           <label for="title">Title</label>
           <input type="text" id="title" required>
