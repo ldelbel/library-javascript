@@ -48,11 +48,11 @@ TDA
 - Twitter: [@delbel_lucas](https://twitter.com/delbel_lucas)
 - Linkedin: [lucasdelbel](https://www.linkedin.com/in/lucasdelbel/)
 
-👤 **Temesghen Tekeste**
+👤 **Maryjane Akpagbue**
 
-- Github: [@temesghentekeste](https://github.com/temesghentekeste)
-- Twitter: [@temesghentekes1](https://twitter.com/temesghentekes1)
-- Linkedin: [temsghen-tekeste-bahta-8b5243193](https://www.linkedin.com/in/temesghen-tekeste-bahta-8b5243193/)
+- Github: [Maryjanee](https://github.com/Maryjanee)
+- Twitter: [Maryjane Akpagbue](https://twitter.com/alfredmaryjane)
+- Linkedin: [Maryjane Akpagbue](https://www.linkedin.com/in/maryjane-akpagbue-1500b7173/)
 
 ## 🤝 Contributing
 
