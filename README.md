@@ -8,37 +8,36 @@
 
 <a text-align="center" href="#about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#method">Methods</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#ins">Installing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#testing">Testing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#tested">Tested with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#ldl">Live Demo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#author">Author</a>
 
 ## About <a name = "about"></a>
 
+This project is a simple app in which the user can add books with title, author and number of pages, delete books, and set them as read.
 
 ## 🔧 Built with<a name = "with"></a>
 
-TDA
-
-## 🔧 Tested with<a name = "tested"></a>
-TDA
+- HTML5
+- CSS3
+- Javascript
 
 ## 🔴 Live Demo <a name = "ldl"></a>
 
-[Run on Repl.it]()
+[Live Demo]()
 
 
 ## 🔨 Setup
-TDA
 
-## 🛠 Installing <a name = "ins"></a>
-TDA
+To get a local copy of the repository please run the following commands on your terminal:
 
-## 🛠 Testing <a name = "testing"></a>
-TDA
-
+```bash
+$ cd <folder>
+$ git clone https://github.com/ldelbel/library-javascript
+$ cd library-javascript
+$ npm install
+$ npm run start
+```
 
 ## ✒️  Authors <a name = "author"></a>
 
