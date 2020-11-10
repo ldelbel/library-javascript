@@ -12,10 +12,6 @@ Book.prototype.toggleStatus = () => {
   this.readStatus == true ? this.readStatus = false : this.readStatus = true
 }
 
-const deleteBook = (e) => {
-  index = myLibrary.findIndex(book);
-  myLibrary.splice(index, 1);
-}
 
 
 function displayBook(myLibrary){
@@ -28,7 +24,7 @@ function displayBook(myLibrary){
     row.innerHTML = `<td>${book.title}</td>
                     <td>${book.author}</td>
                     <td>${book.pageNumber}</td>
-                    <td><button id="${book.title}">${book.readStatus}</button></td>
+                    <td><button id="${book.title}" onclick="${book.toggleStatus}">${book.readStatus}</button></td>
                     <td><button id="${myLibrary.indexOf(book)}">Delete</button></td>`;
      libraryDisplay.appendChild(row);
      document.getElementById(`${myLibrary.indexOf(book)}`).addEventListener('click', (e) => {
