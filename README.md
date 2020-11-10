@@ -41,17 +41,18 @@ $ npm run start
 
 ## ✒️  Authors <a name = "author"></a>
 
+👤 **Maryjane Akpagbue**
+
+- Github: [Maryjanee](https://github.com/Maryjanee)
+- Twitter: [Maryjane Akpagbue](https://twitter.com/alfredmaryjane)
+- Linkedin: [Maryjane Akpagbue](https://www.linkedin.com/in/maryjane-akpagbue-1500b7173/)
+
 👤 **Lucas Delbel**
 
 - Github: [@ldelbel](https://github.com/ldelbel)
 - Twitter: [@delbel_lucas](https://twitter.com/delbel_lucas)
 - Linkedin: [lucasdelbel](https://www.linkedin.com/in/lucasdelbel/)
 
-👤 **Maryjane Akpagbue**
-
-- Github: [Maryjanee](https://github.com/Maryjanee)
-- Twitter: [Maryjane Akpagbue](https://twitter.com/alfredmaryjane)
-- Linkedin: [Maryjane Akpagbue](https://www.linkedin.com/in/maryjane-akpagbue-1500b7173/)
 
 ## 🤝 Contributing
 
