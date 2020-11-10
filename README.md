@@ -14,6 +14,11 @@
 
 This project is a simple app in which the user can add books with title, author and number of pages, delete books, and set them as read.
 
+
+  ![screenshot](screen1.png) 
+  
+  ![screenshot](screen2.png) 
+
 ## 🔧 Built with<a name = "with"></a>
 
 - HTML5
@@ -27,8 +32,6 @@ To get a local copy of the repository please run the following commands on your 
 ```bash
 $ git clone https://github.com/ldelbel/library-javascript
 $ cd library-javascript
-$ npm install
-$ npm run start
 ```
 
 ## ✒️  Authors <a name = "author"></a>
