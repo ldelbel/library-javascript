@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  
   <title>Library JS</title>
 </head>
 <body>
   <main class="container">
-    <div id="form-container">
+    <button id="book-modal" class="btn">New Book</button>
+    <div id="form-modal" class="modal-container">
+      
       <form id="form">
+        <span class="close">&times;</span>
         <div class="form-field">
           <label for="title">Title</label>
           <input type="text" id="title" required>
@@ -22,7 +27,7 @@
           <label for="page-num">Number of Pages</label>
           <input type="text" id="page-num" required>
         </div>
-        <input type="submit" value="AddBook" id="add-book-btn">
+        <input type="submit" value="AddBook" id="add-book-btn" class="btn">
         
       </form>
     </div>
@@ -33,6 +38,7 @@
           <th>Author</th>
           <th>Page Number</th>
           <th>Read Status</th>
+          <th>Remove book</th>
         </tr> 
       </thead>
       <tbody id="library-display">
