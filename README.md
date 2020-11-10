@@ -7,9 +7,7 @@
 ## Content
 
 <a text-align="center" href="#about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#method">Methods</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#ldl">Live Demo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#author">Author</a>
 
 ## About <a name = "about"></a>
@@ -22,17 +20,11 @@ This project is a simple app in which the user can add books with title, author 
 - CSS3
 - Javascript
 
-## 🔴 Live Demo <a name = "ldl"></a>
-
-[Live Demo]()
-
-
 ## 🔨 Setup
 
 To get a local copy of the repository please run the following commands on your terminal:
 
 ```bash
-$ cd <folder>
 $ git clone https://github.com/ldelbel/library-javascript
 $ cd library-javascript
 $ npm install
