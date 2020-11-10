@@ -1,39 +1,55 @@
 let myLibrary = [];
-let form = document.getElementById('form');
-let addBookBtn = document.querySelector('#add-book-btn');
-let libraryDisplay = document.querySelector('#library-display');
+ let libraryDisplay = document.querySelector('#library-display'); 
 
-
-function Book(title, author, pageNumber, readStatus){
+function Book(title, author, pageNumber){
   this.title = title;
   this.author = author;
   this.pageNumber = pageNumber;
-  this.readStatus = readStatus;
+  this.readStatus = false;
 }
 
-function addBookToLibrary(title, author, pageNumber, readStatus = false){
-  let book = new Book(title, author, pageNumber, readStatus);
-  displayBook(book);
- }
 
-form.addEventListener('submit', (e)=> {
+function displayBook(myLibrary){
+  while (libraryDisplay.firstChild) {
+        libraryDisplay.removeChild(libraryDisplay.firstChild);
+    }
+    
+   myLibrary.forEach((book) => {
+    let row = document.createElement('tr');
+    row.innerHTML = `<td>${book.title}</td>
+                    <td>${book.author}</td>
+                    <td>${book.pageNumber}</td>
+                    <td>${book.readStatus}</td>`
+    
+     libraryDisplay.appendChild(row)}
+    );
+    
+}
+
+function addBookToLibrary(title, author, pageNumber){
+  let book = new Book(title, author, pageNumber);
+  myLibrary.push(book); 
+  displayBook(myLibrary);
+ }
+ 
+ function cleaFields(){
+   title = document.getElementById('title').value = ""
+   author = document.querySelector('#author').value = ""
+   pageNumber = document.querySelector('#page-num').value = ""
+ }
+ 
+
+ document.getElementById('form').addEventListener('submit', function(e) {
   let title = document.getElementById('title').value;
   let author = document.querySelector('#author').value;
   let pageNumber = document.querySelector('#page-num').value;
   addBookToLibrary(title, author, pageNumber);
+  cleaFields()
   e.preventDefault();
-  console.log(myLibrary);
 });
 
-function displayBook(book){
-     myLibrary.push(book);
-     let parent = document.createElement('tr');
-     Object.values(book).forEach( value => {
-        let child = document.createElement('th');
-        child.innerHTML = value;
-        parent.appendChild(child);
-     } )    
-     libraryDisplay.appendChild(parent);
-}
+
+
+
 
 
