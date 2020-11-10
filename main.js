@@ -17,10 +17,6 @@ const deleteBook = (e) => {
   myLibrary.splice(index, 1);
 }
 
-document.getElementById(0).addEventListener('click', (e) => {
-  console.log(e.target);
-});
-
 
 function displayBook(myLibrary){
   while (libraryDisplay.firstChild) {
@@ -33,9 +29,18 @@ function displayBook(myLibrary){
                     <td>${book.author}</td>
                     <td>${book.pageNumber}</td>
                     <td><button id="${book.title}">${book.readStatus}</button></td>
-                    <td><button id="${myLibrary.indexOf(book)}" data-id="${myLibrary.indexOf(book)}">Delete</button></td>`
-     libraryDisplay.appendChild(row)}
-    );
+                    <td><button id="${myLibrary.indexOf(book)}">Delete</button></td>`;
+     libraryDisplay.appendChild(row);
+     document.getElementById(`${myLibrary.indexOf(book)}`).addEventListener('click', (e) => {
+      let bookIndex = e.target.id;
+      myLibrary.splice(bookIndex, 1);
+      if (bookIndex) {
+        displayBook(myLibrary)
+      }
+  })
+    });
+   
+  
 }
 
 function addBookToLibrary(title, author, pageNumber){
@@ -56,9 +61,12 @@ function addBookToLibrary(title, author, pageNumber){
   let author = document.querySelector('#author').value;
   let pageNumber = document.querySelector('#page-num').value;
   addBookToLibrary(title, author, pageNumber);
+  
   cleaFields()
+  
   e.preventDefault();
 });
+
 
 
 
