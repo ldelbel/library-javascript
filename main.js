@@ -8,6 +8,19 @@ function Book(title, author, pageNumber){
   this.readStatus = false;
 }
 
+Book.prototype.toggleStatus = () => {
+  this.readStatus == true ? this.readStatus = false : this.readStatus = true
+}
+
+const deleteBook = (e) => {
+  index = myLibrary.findIndex(book);
+  myLibrary.splice(index, 1);
+}
+
+document.getElementById(0).addEventListener('click', (e) => {
+  console.log(e.target);
+});
+
 
 function displayBook(myLibrary){
   while (libraryDisplay.firstChild) {
@@ -19,11 +32,10 @@ function displayBook(myLibrary){
     row.innerHTML = `<td>${book.title}</td>
                     <td>${book.author}</td>
                     <td>${book.pageNumber}</td>
-                    <td>${book.readStatus}</td>`
-    
+                    <td><button id="${book.title}">${book.readStatus}</button></td>
+                    <td><button id="${myLibrary.indexOf(book)}" data-id="${myLibrary.indexOf(book)}">Delete</button></td>`
      libraryDisplay.appendChild(row)}
     );
-    
 }
 
 function addBookToLibrary(title, author, pageNumber){
