@@ -8,6 +8,7 @@
 
 <a text-align="center" href="#about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#ldl">Live Demo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#author">Author</a>
 
 ## About <a name = "about"></a>
@@ -24,6 +25,11 @@ This project is a simple app in which the user can add books with title, author 
 - HTML5
 - CSS3
 - Javascript
+
+## 🔴 Live Demo <a name = "ldl"></a>
+
+[Live Demo](https://rawcdn.githack.com/ldelbel/library-javascript/feature/library/index.html)
+
 
 ## 🔨 Setup
 
