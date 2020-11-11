@@ -7,7 +7,6 @@
 ## Content
 
 <a text-align="center" href="#about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#method">Methods</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#ldl">Live Demo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#author">Author</a>
@@ -15,6 +14,10 @@
 ## About <a name = "about"></a>
 
 This project is a simple app in which the user can add books with title, author and number of pages, delete books, and set them as read.
+
+  ![screenshot](screen1.png) 
+  
+  ![screenshot](screen2.png) 
 
 ## 🔧 Built with<a name = "with"></a>
 
@@ -24,34 +27,30 @@ This project is a simple app in which the user can add books with title, author 
 
 ## 🔴 Live Demo <a name = "ldl"></a>
 
-[Live Demo](https://raw.githack.com/ldelbel/library-javascript/feature/library/index.html)
-
+[Live Demo](https://ldelbel.github.io/library-javascript/)
 
 ## 🔨 Setup
 
 To get a local copy of the repository please run the following commands on your terminal:
 
 ```bash
-$ cd <folder>
 $ git clone https://github.com/ldelbel/library-javascript
 $ cd library-javascript
-$ npm install
-$ npm run start
 ```
 
 ## ✒️  Authors <a name = "author"></a>
-
-👤 **Lucas Delbel**
-
-- Github: [@ldelbel](https://github.com/ldelbel)
-- Twitter: [@delbel_lucas](https://twitter.com/delbel_lucas)
-- Linkedin: [lucasdelbel](https://www.linkedin.com/in/lucasdelbel/)
 
 👤 **Maryjane Akpagbue**
 
 - Github: [Maryjanee](https://github.com/Maryjanee)
 - Twitter: [Maryjane Akpagbue](https://twitter.com/alfredmaryjane)
 - Linkedin: [Maryjane Akpagbue](https://www.linkedin.com/in/maryjane-akpagbue-1500b7173/)
+
+👤 **Lucas Delbel**
+
+- Github: [@ldelbel](https://github.com/ldelbel)
+- Twitter: [@delbel_lucas](https://twitter.com/delbel_lucas)
+- Linkedin: [lucasdelbel](https://www.linkedin.com/in/lucasdelbel/)
 
 ## 🤝 Contributing
 
@@ -63,6 +62,3 @@ Feel free to check the [issues page]().
 ## 👍 Show your support
 
 Give a ⭐️ if you like this project!
-
-## :clap: Acknowledgements
-TDA
