@@ -23,7 +23,7 @@ const storageAvailable = (type) => {
       && storage.length !== 0
     );
   }
-}
+};
 
 let myLibrary = [];
 const libraryDisplay = document.querySelector('#library-display');
@@ -34,7 +34,7 @@ const span = document.getElementsByClassName('close')[0];
 const status = (stat) => {
   if (stat === 'true' || stat === true) return 'Read';
   return 'Unread';
-}
+};
 
 const displayBook = (myLibrary) => {
   while (libraryDisplay.firstChild) {
@@ -75,7 +75,7 @@ const displayBook = (myLibrary) => {
   });
 
   localStorage.setItem('currentLibrary', JSON.stringify(myLibrary));
-}
+};
 
 if (storageAvailable('localStorage')) {
   const current = localStorage.getItem('currentLibrary');
@@ -122,13 +122,13 @@ const addBookToLibrary = (title, author, pageNumber, readStatus) => {
   const book = new Book(title, author, pageNumber, readStatus);
   myLibrary.push(book);
   displayBook(myLibrary);
-}
+};
 
 const cleaFields = () => {
   document.getElementById('title').value = '';
   document.querySelector('#author').value = '';
   document.querySelector('#page-num').value = '';
-}
+};
 
 document.getElementById('form').addEventListener('submit', (e) => {
   const title = document.getElementById('title').value;
