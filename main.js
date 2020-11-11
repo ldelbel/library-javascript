@@ -118,7 +118,6 @@ Book.prototype.toggleStatus = function toggle() {
   }
 };
 
-
 function addBookToLibrary(title, author, pageNumber, readStatus) {
   const book = new Book(title, author, pageNumber, readStatus);
   myLibrary.push(book);
