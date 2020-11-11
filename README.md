@@ -28,7 +28,7 @@ This project is a simple app in which the user can add books with title, author 
 
 ## 🔴 Live Demo <a name = "ldl"></a>
 
-[Live Demo](https://rawcdn.githack.com/ldelbel/library-javascript/feature/library/index.html)
+[Live Demo](https://ldelbel.github.io/library-javascript/)
 
 
 ## 🔨 Setup
