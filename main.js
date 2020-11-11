@@ -1,4 +1,4 @@
-function storageAvailable(type) {
+const storageAvailable = (type) => {
   let storage;
   try {
     storage = window[type];
@@ -31,12 +31,12 @@ const modal = document.getElementById('form-modal');
 const btn = document.querySelector('#book-modal');
 const span = document.getElementsByClassName('close')[0];
 
-function status(stat) {
+const status = (stat) => {
   if (stat === 'true' || stat === true) return 'Read';
   return 'Unread';
 }
 
-function displayBook(myLibrary) {
+const displayBook = (myLibrary) => {
   while (libraryDisplay.firstChild) {
     libraryDisplay.removeChild(libraryDisplay.firstChild);
   }
@@ -118,13 +118,13 @@ Book.prototype.toggleStatus = function toggle() {
   }
 };
 
-function addBookToLibrary(title, author, pageNumber, readStatus) {
+const addBookToLibrary = (title, author, pageNumber, readStatus) => {
   const book = new Book(title, author, pageNumber, readStatus);
   myLibrary.push(book);
   displayBook(myLibrary);
 }
 
-function cleaFields() {
+const cleaFields = () => {
   document.getElementById('title').value = '';
   document.querySelector('#author').value = '';
   document.querySelector('#page-num').value = '';
