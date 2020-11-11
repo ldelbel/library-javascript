@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,600&display=swap"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Library JS</title>
+  </head>
+  <body>
+    <main class="container">
+      <button id="book-modal" class="btn" onclick="displayModal()">
+        New Book
+      </button>
+      <div id="form-modal" class="modal-container">
+        <form id="form">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div class="form-field">
+            <label for="title">Title</label>
+            <input type="text" id="title" required />
+          </div>
+          <div class="form-field">
+            <label for="author">Author</label>
+            <input type="text" id="author" required />
+          </div>
+          <div class="form-field">
+            <label for="page-num">Number of Pages</label>
+            <input type="text" id="page-num" required />
+          </div>
+          <div class="form-field">
+            <label>Status</label>
+            <div class="flex">
+              <input
+                type="radio"
+                id="read"
+                name="status-def"
+                value="true"
+                checked
+              />
+              <label for="read">Read</label>
+            </div>
+            <div class="flex">
+              <input type="radio" id="Unread" name="status-def" value="false" />
+              <label for="Unread">Unread</label>
+            </div>
+          </div>
+          <input type="submit" value="AddBook" id="add-book-btn" class="btn" />
+        </form>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Page Number</th>
+            <th>Read Status</th>
+            <th>Remove book</th>
+          </tr>
+        </thead>
+        <tbody id="library-display"></tbody>
+      </table>
+    </main>
+  </body>
+  <script type="text/javascript" src="main.js" defer></script>
+</html>
