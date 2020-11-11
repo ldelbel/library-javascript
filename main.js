@@ -79,7 +79,7 @@ function displayBook(myLibrary) {
 
 if (storageAvailable('localStorage')) {
   const current = localStorage.getItem('currentLibrary');
-  if (current.length > 10) {
+  if (current !== null && current.length > 10) {
     myLibrary = JSON.parse(current);
     displayBook(myLibrary);
   } else {
