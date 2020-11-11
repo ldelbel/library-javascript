@@ -67,6 +67,7 @@ const displayBook = (myLibrary) => {
       .addEventListener('click', (e) => {
         const bookIndex = e.target.dataset.id;
         const book = myLibrary[bookIndex];
+        console.log(book);
         book.toggleStatus();
         if (bookIndex) {
           displayBook(myLibrary);
@@ -103,23 +104,23 @@ window.onclick = function closeWindow(event) {
   }
 };
 
-function Book(title, author, pageNumber, readStatus) {
-  this.title = title;
-  this.author = author;
-  this.pageNumber = pageNumber;
-  this.readStatus = readStatus;
+let Book = (title, author, pageNumber, readStatus) => {
+ 
+  const toggleStatus = () => {
+    if (props.readStatus === true || props.readStatus === "true") {
+      props.readStatus = false;
+    } else {
+      props.readStatus = true;
+    }
+  }
+
+  const props = { title, author, pageNumber, readStatus, toggleStatus };
+  return props;
 }
 
-Book.prototype.toggleStatus = function toggle() {
-  if (this.readStatus === true || this.readStatus === 'true') {
-    this.readStatus = false;
-  } else {
-    this.readStatus = true;
-  }
-};
 
 const addBookToLibrary = (title, author, pageNumber, readStatus) => {
-  const book = new Book(title, author, pageNumber, readStatus);
+  let book = Book(title, author, pageNumber, readStatus);
   myLibrary.push(book);
   displayBook(myLibrary);
 };
