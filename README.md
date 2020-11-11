@@ -15,7 +15,6 @@
 
 This project is a simple app in which the user can add books with title, author and number of pages, delete books, and set them as read.
 
-
   ![screenshot](screen1.png) 
   
   ![screenshot](screen2.png) 
@@ -29,7 +28,6 @@ This project is a simple app in which the user can add books with title, author 
 ## 🔴 Live Demo <a name = "ldl"></a>
 
 [Live Demo](https://ldelbel.github.io/library-javascript/)
-
 
 ## 🔨 Setup
 
@@ -53,7 +51,6 @@ $ cd library-javascript
 - Github: [@ldelbel](https://github.com/ldelbel)
 - Twitter: [@delbel_lucas](https://twitter.com/delbel_lucas)
 - Linkedin: [lucasdelbel](https://www.linkedin.com/in/lucasdelbel/)
-
 
 ## 🤝 Contributing
 
